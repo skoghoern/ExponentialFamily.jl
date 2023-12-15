@@ -69,7 +69,6 @@ getgradlogpartition(::NaturalParametersSpace, ::Type{Beta}, _) = (η) -> begin
     sum = η₁p + η₂p
     dig = digamma(sum)
 
-
     return SA[digamma(η₁p) - dig, digamma(η₂p) - dig]
 end
 
